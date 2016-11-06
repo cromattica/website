@@ -1,0 +1,13 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "homepage": "http://www.cromattica.com",
+  "author": {
+    "name": "Miguel Ángel Martín",
+    "mail": "miguelbemartin@gmail.com"
+  },
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "install": "bundle install"
+  }
+}
