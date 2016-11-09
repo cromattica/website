@@ -3,11 +3,11 @@
 ---
 
 @import 'vendor/bootstrap';
-// @import 'vendor/jquery.fancybox';
-// @import 'vendor/flexslider';
-// @import 'vendor/queries';
-// @import 'vendor/etline-font';
-// @import 'vendor/animate';
+@import 'vendor/jquery.fancybox';
+@import 'vendor/flexslider';
+@import 'vendor/queries';
+@import 'vendor/etline-font';
+@import 'vendor/animate';
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
@@ -360,9 +360,9 @@ Navigation
           transition: all 300ms ease-in-out; }
 
 /* ==========================================================================
-Hero
+Header
 ========================================================================== */
-.parallax{height: 100vh;}
+header.parallax{height: 100vh;}
 #services{background-color: #FFF;}
 .hero {
   z-index: -1;
@@ -373,10 +373,8 @@ Hero
   height: 100vh;
   text-align: center;
   overflow: hidden;
-  height:100vh;
   background: url("../img/background-header.jpg") center center;
   background-size: cover;box-shadow: inset 0 0 0 1000px rgba(42,113,156,.8);
-
 }
   .hero .down-arrow a {
     color: #fff; }
@@ -405,7 +403,7 @@ Hero
   z-index: 999;
   width: 100%; }
 
-header {
+.nav-bar {
   padding: 50px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
@@ -413,35 +411,35 @@ header {
   margin: 0 auto;
   -webkit-transition: padding 300ms ease-in-out;
           transition: padding 300ms ease-in-out; }
-  header a {
+  .nav-bar a {
     color: #fff;
     text-transform: uppercase;
     font-size: 13px; }
-    header a.login {
+    .nav-bar a.login {
       margin-right: 20px; }
-  header .logo {
+  .nav-bar .logo {
     display: inline-block; }
-  header ul.primary-nav {
+  .nav-bar ul.primary-nav {
     margin: 0 0 0 75px;
     padding: 0; }
-    header ul.primary-nav li {
+    .nav-bar ul.primary-nav li {
       display: inline; }
-      header ul.primary-nav li a {
+      .nav-bar ul.primary-nav li a {
         color: #fff;
         padding-right: 25px; }
-        header ul.primary-nav li a:hover {
+        .nav-bar ul.primary-nav li a:hover {
           color: #FF5274; }
-      header ul.primary-nav li:last-child a {
+      .nav-bar ul.primary-nav li:last-child a {
         padding-right: 0px; }
-  header ul.member-actions li {
+  .nav-bar ul.member-actions li {
     display: inline; }
-    header ul.member-actions li a {
+    .nav-bar ul.member-actions li a {
       color: #fff; }
-      header ul.member-actions li a:hover {
+      .nav-bar ul.member-actions li a:hover {
         color: #FF5274; }
-  header .header-nav {
+  .nav-bar .header-nav {
     display: inline-block; }
-  header .member-actions {
+  .nav-bar .member-actions {
     position: absolute;
     right: 0;
     top: 41px;
@@ -781,73 +779,35 @@ Footer
 ========================================================================== */
 footer {
   background-color: #3D4351;
-  position: relative; }
-  footer p {
+  position: relative;
+
+  p {
     color: #ACB1B4;
-    font-size: 13px; }
-  footer a {
-    color: #fff; }
-  footer a:hover {
-    color: #FF5274; }
-  footer ul.footer-group {
-    border-top: solid 1px #4E566C;
-    padding-top: 25px;
-    margin-bottom: 45px; }
-  footer ul.footer-group li {
-    display: inline-block; }
-  footer ul.footer-group li a {
     font-size: 13px;
-    text-transform: uppercase; }
-  footer ul.footer-group li a:hover {
-    color: #FF5274; }
-  footer ul.footer-group li {
-    margin-right: 30px; }
-  footer ul.footer-group li:last-child {
-    margin-right: 0; }
-  footer span.fa-heart {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;}
+  a {
+    color: #fff;
+    &:hover {
+      color: #FF5274; }
+  }
+  span.fa-heart {
     color: #ff415c;
     font-size: 15px;
     margin: 0 2px; }
-  footer .social-share {
-    position: absolute;
-    background-color: #373D4A;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    padding: 142px 0 0 70px; }
-    footer .social-share p {
-      color: #fff;
-      text-transform: uppercase;
-      padding-bottom: 10px; }
-    footer .social-share a.twitter-share {
-      height: 60px;
-      width: 60px;
-      background-color: #1AB4EF;
-      border-radius: 3px;
-      font-size: 22px;
-      display: inline-block;
-      text-align: center;
-      margin-right: 20px; }
-    footer .social-share a.twitter-share:hover, footer .social-share a.twitter-share:focus {
-      background-color: #1590BF; }
-    footer .social-share a.facebook-share:hover, footer .social-share a.facebook-share:focus {
-      background-color: #324C85; }
-    footer .social-share a.facebook-share {
-      height: 60px;
-      width: 60px;
-      background-color: #3B5898;
-      border-radius: 3px;
-      font-size: 22px;
-      display: inline-block;
-      text-align: center; }
-    footer .social-share a {
-      color: #fff; }
-    footer .social-share a:hover {
-      color: #fff; }
-    footer .social-share a i {
-      margin-top: 20px; }
-  footer .footer-links {
-    margin: 120px 0 120px 0; }
+    ul{
+      float: right;
+      li{
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 13px;
+      }
+    }
+}
+
+
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
