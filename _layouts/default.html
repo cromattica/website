@@ -16,8 +16,9 @@
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ '/assets/favicon-32x32.png' | prepend: site.baseurl }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ '/assets/favicon-16x16.png' | prepend: site.baseurl }}" sizes="16x16" />
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.png' | prepend: site.baseurl }}">
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
@@ -26,19 +27,21 @@
 </head>
 <body id="top">
 
-    <section class="parallax">
         <div class="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="hero-content text-center">
-                            <div class="logo"><a href="#"><img src="{{ '/assets/img/cromattica.png' | prepend: site.baseurl }}" alt="Sedna logo"></a></div>
+                            <div class="logo"><a href="#"><img src="{{ '/assets/img/cromattica.png' | prepend: site.baseurl }}" alt="Cromattica logo"></a></div>
                             <h1>A Digital Product Agency</h1>
                             <p class="intro">We <strong>create, design and develop</strong> digital products to climb up the internet</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+        </div>
+    </header>
         </div>
     </section>
 
