@@ -155,7 +155,6 @@ ul li {
 .section-padding {
   padding: 120px 0; }
 
-
 /* ==========================================================================
 Animations
 ========================================================================== */
@@ -352,24 +351,24 @@ header.parallax{
   background: url("../img/background-header.jpg") center center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(61,67,81,.8);
-}
 
-  .hero .down-arrow a {
+  .down-arrow a {
     color: #fff; }
 
-  .hero h1 {
+  h1 {
     color: #fff;
     font-size: 24px;
     margin-bottom: 10px; }
 
-  .hero p.intro {
+  p.intro {
     color: #fff;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 80px; }
 
-  .hero .hero-content {
+  .hero-content {
     padding-top: 30%; }
+}
 
 .navigation {
   -webkit-transition: all 300ms ease-in-out;
@@ -391,37 +390,36 @@ header.parallax{
   width: 1170px;
   margin: 0 auto;
   -webkit-transition: padding 300ms ease-in-out;
-          transition: padding 300ms ease-in-out; }
-  .nav-bar a {
+          transition: padding 300ms ease-in-out;
+  a {
     color: #fff;
     text-transform: uppercase;
-    font-size: 13px; }
-    .nav-bar a {
-      margin-left: 25px; }
-  .nav-bar .logo {
+    font-size: 13px;
+    margin-left: 25px; }
+  .logo {
     display: inline-block; }
 
-    .nav-bar ul li {
-      line-height: 50px;
-      display: inline; }
-
-      .nav-bar ul.primary-nav li:last-child a {
-        padding-right: 0px; }
-  .nav-bar ul.member-actions li {
+  ul li {
+    line-height: 50px;
     display: inline; }
-    .nav-bar ul.member-actions li a {
-      color: #fff; }
-      .nav-bar ul.member-actions li a:hover {
-        color: $tertiary-color; }
-  .nav-bar .header-nav {
+
+  ul.primary-nav li:last-child a {
+    padding-right: 0px; }
+  ul.member-actions li {
+    display: inline; }
+  ul.member-actions li a {
+    color: #fff; }
+  ul.member-actions li a:hover {
+    color: $tertiary-color; }
+  .header-nav {
     display: inline-block; }
-  .nav-bar .member-actions {
+  .member-actions {
     position: absolute;
     right: 0;
     top: 41px;
     -webkit-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out; }
-
+}
 .down-arrow {
   color: #fff;
   font-size: 30px;
@@ -539,8 +537,6 @@ Features-stack
 Team
 ========================================================================== */
 #team {
-  background: url("../img/testimonials-bg.jpg") no-repeat center center;
-  background-size: cover;
 
   h2 {
     color: #fff;
@@ -590,7 +586,7 @@ Contact form
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-  .form-input-group i.fa-lock {
+  .form-input-group i.fa-user {
     font-size: 18px;
     position: absolute;
     top: 50%;
