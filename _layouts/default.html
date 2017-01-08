@@ -23,9 +23,28 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
 
-    <script src="{{ '/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' | prepend: site.baseurl }}"></script>
 </head>
 <body id="top">
+    <header class="parallax">
+        <section class="navigation">
+            <div class="nav-bar">
+                <div class="header-content">
+                    <div class="logo"><a href="#top"><img width="17" src="{{ '/assets/img/logo-mini.png' | prepend: site.baseurl }}" alt="Cromattica logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="member-actions">
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="hero">
             <div class="container">
@@ -42,8 +61,147 @@
             <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
         </div>
     </header>
+
+    <section class="intro section-padding" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe033;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Full Stack Development</h5>
+                        <p>We develop software projects. We use different technologies to get the best software features.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe030;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Agile Software Development</h5>
+                        <p>We are using agile methodologies to get the absolute balance between the client, the project and the team.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe03e;" class="icon"></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Business Consulting</h5>
+                        <p>We can analyze the software problem to propose the asiest and appropriate solution for your business. Good software exists to solve real problems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe040;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>User Experience</h5>
+                        <p>Designing software for you. We work and test the experience doing the software easier and understandble for users.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe03c;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>MVP for Startups</h5>
+                        <p>Create your minimum viable product to test the market and improve your project in a fast way making your product usable from the beginning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe046;" class="icon"></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Open Source</h5>
+                        <p>We really love the community and we bring some of our valuable code to improve and share.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="features section-padding" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="feature-list">
+                        <h3>We love Open Source</h3>
+                        <p>Open Source is present in all our projects, and we like to give back to the community the work. Here you can discover some of our contributions to the Open Source.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03e;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Symfony Skeleton</h5>
+                                    <p>A Symfony standar framework with the basics bundles configured and ready to start to code.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe040;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>MeetingUP</h5>
+                                    <p>An easy way to create your Meetup website. Download, install, config and publish and you have your community website working.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03c;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Trainning and Talks</h5>
+                                    <p>We organize a PHP User Group to increase the connection in the PHP community. We love to share knowledge.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-extra section-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>Contact Us</h3>
+                        <p>We are happy to receive new posibilities to colaborate. Please, don't hesitate to send us an email.</p>
+                        <p>Email: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#108;&#111;&#064;&#099;&#114;&#111;&#109;&#097;&#116;&#116;&#105;&#099;&#097;&#046;&#099;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#064;&#099;&#114;&#111;&#109;&#097;&#116;&#116;&#105;&#099;&#097;&#046;&#099;&#111;&#109;</a></p>
+                        <p>Tel: <a href="tel:+34650301294">+34 650 301 294</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="to-top">
+        <div class="container">
+            <div class="row">
+                <div class="to-top-wrap">
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{{ '/assets/js/vendor/retina.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/vendor/jquery.fancybox.pack.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/vendor/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/scripts.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/vendor/jquery.flexslider-min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/vendor/classie/classie.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/vendor/jquery-waypoints/jquery.waypoints.min.js' | prepend: site.baseurl }}"></script>
 
     {% include ga.html %}
 
