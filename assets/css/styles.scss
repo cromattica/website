@@ -153,7 +153,7 @@ ul li {
   list-style: none; }
 
 .section-padding {
-  padding: 120px 0; }
+  padding: 20px 0; }
 
 /* ==========================================================================
 Animations
@@ -338,6 +338,19 @@ header.parallax{
 
 #services{
   background-color: #FFF;}
+
+#products{
+  background-color: #E3E3E3;
+}
+
+h2{
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
 
 .hero {
   z-index: -1;
