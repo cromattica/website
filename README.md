@@ -1,2 +1,3 @@
-# Website
-[http://www.cromattica.com](http://www.cromattica.com)
+# cromattica.com
+![Deploy](https://github.com/cromattica/cromattica.com/workflows/Deploy/badge.svg)
+
